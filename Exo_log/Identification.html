@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="C:\CDI\Exo\Node Js\Exo_log\liste.js"></script>
+</head>
+<body>
+                    <!-- page une -->
+
+
+<div data-role="page" data-theme="b" id="pageone">
+       
+    <div data-role="main" style="text-align:center">
+    <div data-role="content" data-type="horizontal">
+        <a href="#Identification" data-rel="popup" data-position-to="window" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Identification</a>
+        <div data-role="popup" id="Identification">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <div data-role="main" id="login">
+                <div data-role="header">
+                    <h1>Login</h1>
+                </div>
+                    <!-- start content -->
+                <div data-role="main" data-inset="true"> 
+                <form name="loginform" id="formulaire" >
+                            <fieldset >
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" id="email" value=""  />
+                                <label for="password">Password:</label>
+                                <input type="password" name="password" id="password" value="" />
+                                <input type="button" id="btnLogin"  value="Login";"/>
+                            </fieldset>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+                    <!-- end content -->
+    <div data-role="main" id="page">
+    <div data-role="center" class="ui-btn">
+    </div>
+
+
+
+<div data-role="page" data-theme="b" id="pagecompte">
+    <div data-role="navbar">
+    <div data-role="header">
+      <h1>Bankster</h1>
+        <a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <a href="#pagetwo" class="ui-btn ui-icon-search ui-btn-icon-right">Search</a>
+    </div>
+    </div>
+    <div data-role="main">
+<p>Bonjours Mr <br></p>
+<p>votre compte a des millions a sont actif</p>
+    </div>
+
+    <div data-role="footer" style="margin: 80px">
+        <h1>Caribou</h1>
+    </div>
+</div>
+
+</body>
+</html>
